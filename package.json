@@ -1,10 +1,5 @@
 {
-  "name": "brew-haven",
+  "name": "app",
   "version": "1.0.0",
-  "description": "Brew Haven landing page",
-  "private": true,
-  "scripts": {
-    "start": "npx serve .",
-    "build": "echo 'Static site - no build needed'"
-  }
+  "private": true
 }
