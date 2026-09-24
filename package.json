@@ -1,9 +1,7 @@
 {
-  "name": "brew-haven",
+  "name": "restaurant-website",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
-    "start": "npx serve .",
-    "build": "echo 'Static site — no build required'"
+    "build": "echo 'Build complete'"
   }
 }
