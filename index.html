@@ -3,54 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brew Haven | Coffee Shop</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<title>Brew Haven — Artisan Coffee Shop</title>
+<meta name="description" content="Brew Haven is your neighborhood coffee haven. Freshly roasted beans, handcrafted drinks, and a cozy atmosphere.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-<header>
-<nav>
-<div class="logo">Brew Haven</div>
-<button class="menu-toggle" aria-label="Toggle menu">☰</button>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#menu">Menu</a></li>
+<nav class="nav">
+<div class="nav__container">
+<a href="#" class="nav__logo">Brew Haven</a>
+<button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+<span class="nav__toggle-bar"></span>
+<span class="nav__toggle-bar"></span>
+<span class="nav__toggle-bar"></span>
+</button>
+<ul class="nav__links">
 <li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#testimonials">Reviews</a></li>
+<li><a href="#gallery">Gallery</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+</div>
 </nav>
+
+<header class="hero" id="home">
+<div class="hero__overlay"></div>
+<div class="hero__content">
+<h1 class="hero__title">Where Every Cup Tells a Story</h1>
+<p class="hero__subtitle">Artisan coffee, crafted with passion in the heart of the city.</p>
+<a href="#menu" class="hero__cta">Explore Our Menu</a>
+</div>
 </header>
-<section id="home" class="hero">
-<div class="hero-content">
-<h1>Welcome to Brew Haven</h1>
-<p>Where every cup tells a story</p>
-<a href="#menu" class="btn">Explore Our Menu</a>
+
+<section class="about" id="about">
+<div class="about__container">
+<div class="about__image">
+<img src="assets/images/about.jpg" alt="Inside Brew Haven coffee shop" loading="lazy">
+</div>
+<div class="about__content">
+<h2 class="section-title">Our Story</h2>
+<p class="about__text">Founded in 2018, Brew Haven began with a simple dream: to create a space where coffee lovers could gather, connect, and savor every moment. What started as a small roastery in a garage has grown into a beloved neighborhood institution.</p>
+<p class="about__text">We source our beans directly from sustainable farms across Ethiopia, Colombia, and Guatemala. Every batch is roasted in-house to bring out unique flavor profiles that celebrate the origin of each bean.</p>
+<div class="about__stats">
+<div class="about__stat"><span class="about__stat-number">6+</span><span class="about__stat-label">Years Serving</span></div>
+<div class="about__stat"><span class="about__stat-number">12</span><span class="about__stat-label">Bean Origins</span></div>
+<div class="about__stat"><span class="about__stat-number">50K+</span><span class="about__stat-label">Cups Brewed</span></div>
+</div>
+</div>
 </div>
 </section>
-<section id="menu" class="menu">
-<h2>Menu Highlights</h2>
-<div class="menu-grid">
-<div class="menu-item"><h3>Espresso</h3><p>$3.50</p><span>Rich, bold, and smooth</span></div>
-<div class="menu-item"><h3>Cappuccino</h3><p>$4.75</p><span>Perfect foam art</span></div>
-<div class="menu-item"><h3>Latte</h3><p>$5.00</p><span>Creamy and comforting</span></div>
-<div class="menu-item"><h3>Mocha</h3><p>$5.25</p><span>Chocolate indulgence</span></div>
+
+<section class="menu" id="menu">
+<div class="menu__container">
+<h2 class="section-title">Our Menu</h2>
+<p class="section-subtitle">Handcrafted drinks made with locally sourced ingredients</p>
+<div class="menu__grid">
+<div class="menu__card">
+<div class="menu__card-image"><img src="assets/images/menu.jpg" alt="Espresso" loading="lazy"></div>
+<div class="menu__card-body"><h3>Espresso</h3><p>Rich, bold shot pulled from our signature blend</p><span class="menu__price">$3.50</span></div>
+</div>
+<div class="menu__card">
+<div class="menu__card-image"><img src="assets/images/menu.jpg" alt="Latte" loading="lazy"></div>
+<div class="menu__card-body"><h3>Signature Latte</h3><p>Velvety steamed milk with house-made syrup</p><span class="menu__price">$5.25</span></div>
+</div>
+<div class="menu__card">
+<div class="menu__card-image"><img src="assets/images/menu.jpg" alt="Cold Brew" loading="lazy"></div>
+<div class="menu__card-body"><h3>Cold Brew</h3><p>18-hour steeped, smooth and refreshing</p><span class="menu__price">$4.75</span></div>
+</div>
+<div class="menu__card">
+<div class="menu__card-image"><img src="assets/images/menu.jpg" alt="Cappuccino" loading="lazy"></div>
+<div class="menu__card-body"><h3>Cappuccino</h3><p>Equal parts espresso, steamed milk, and foam</p><span class="menu__price">$4.50</span></div>
+</div>
+<div class="menu__card">
+<div class="menu__card-image"><img src="assets/images/menu.jpg" alt="Mocha" loading="lazy"></div>
+<div class="menu__card-body"><h3>Dark Mocha</h3><p>Espresso with Belgian chocolate and cream</p><span class="menu__price">$5.50</span></div>
+</div>
+<div class="menu__card">
+<div class="menu__card-image"><img src="assets/images/menu.jpg" alt="Pour Over" loading="lazy"></div>
+<div class="menu__card-body"><h3>Pour Over</h3><p>Single-origin, hand-poured to perfection</p><span class="menu__price">$5.00</span></div>
+</div>
+</div>
 </div>
 </section>
-<section id="about" class="about">
-<h2>About Us</h2>
-<p>Founded in 2015, Brew Haven is dedicated to crafting exceptional coffee experiences. We source beans from sustainable farms and roast them fresh weekly.</p>
-</section>
-<section id="contact" class="contact">
-<h2>Visit Us</h2>
-<div class="contact-info">
-<p><strong>Address:</strong> 123 Coffee Lane, Bean City, BC 12345</p>
-<p><strong>Hours:</strong> Mon-Fri 6AM-8PM, Sat-Sun 7AM-9PM</p>
-<p><strong>Phone:</strong> (555) 123-4567</p>
+
+<section class="testimonials" id="testimonials">
+<div class="testimonials__container">
+<h2 class="section-title">What People Say</h2>
+<div class="testimonials__grid">
+<div class="testimonial">
+<div class="testimonial__avatar"><img src="assets/images/testimonial1.jpg" alt="Sarah M." loading="lazy"></div>
+<div class="testimonial__body">
+<p class="testimonial__text">"Brew Haven is my second home. The baristas remember my order and the atmosphere is always warm and inviting. Best coffee in town, hands down."</p>
+<div class="testimonial__author"><strong>Sarah M.</strong><span>Regular since 2019</span></div>
+</div>
+</div>
+<div class="testimonial">
+<div class="testimonial__avatar"><img src="assets/images/testimonial2.jpg" alt="James K." loading="lazy"></div>
+<div class="testimonial__body">
+<p class="testimonial__text">"The cold brew here changed my life. Smooth, never bitter, and the perfect caffeine kick. I drive 20 minutes just to get my daily fix."</p>
+<div class="testimonial__author"><strong>James K.</strong><span>Coffee Enthusiast</span></div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<footer>
+
+<section class="gallery" id="gallery">
+<div class="gallery__container">
+<h2 class="section-title">Gallery</h2>
+<div class="gallery__grid">
+<div class="gallery__tile gallery__tile--wide"><img src="assets/images/gallery1.jpg" alt="Latte art at Brew Haven" loading="lazy"></div>
+<div class="gallery__tile"><img src="assets/images/gallery2.jpg" alt="Cozy corner at Brew Haven" loading="lazy"></div>
+<div class="gallery__tile gallery__tile--tall"><img src="assets/images/hero.jpg" alt="Brew Haven interior" loading="lazy"></div>
+<div class="gallery__tile"><img src="assets/images/about.jpg" alt="Barista at work" loading="lazy"></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="contact__container">
+<h2 class="section-title">Visit Us</h2>
+<div class="contact__grid">
+<div class="contact__info">
+<h3>Get in Touch</h3>
+<p>Drop by for a cup or reach out for catering inquiries.</p>
+<ul class="contact__details">
+<li><strong>Address:</strong> 142 Maple Street, Portland, OR 97201</li>
+<li><strong>Hours:</strong> Mon–Fri 6am–8pm, Sat–Sun 7am–6pm</li>
+<li><strong>Phone:</strong> (503) 555-0142</li>
+<li><strong>Email:</strong> hello@brewhaven.com</li>
+</ul>
+</div>
+<form class="contact__form" id="contactForm" novalidate>
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required placeholder="Your name">
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required placeholder="your@email.com">
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4" required placeholder="How can we help?"></textarea>
+</div>
+<button type="submit" class="btn btn--primary">Send Message</button>
+<p class="form-status" id="formStatus" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer__container">
+<div class="footer__top">
+<div class="footer__brand">
+<a href="#" class="footer__logo">Brew Haven</a>
+<p>Artisan coffee, crafted with passion since 2018.</p>
+</div>
+<div class="footer__links">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+<div class="footer__social">
+<h4>Follow Us</h4>
+<ul>
+<li><a href="#" aria-label="Instagram">Instagram</a></li>
+<li><a href="#" aria-label="Facebook">Facebook</a></li>
+<li><a href="#" aria-label="Twitter">Twitter</a></li>
+</ul>
+</div>
+</div>
+<div class="footer__bottom">
 <p>&copy; 2024 Brew Haven. All rights reserved.</p>
+</div>
+</div>
 </footer>
-<script src="js/script.js"></script>
+
+<script src="js/main.js"></script>
 </body>
 </html>
