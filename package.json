@@ -1,8 +1,8 @@
 {
-  "name": "brew-haven",
+  "name": "restaurant-site",
   "version": "1.0.0",
-  "private": true,
+  "description": "Restaurant website",
   "scripts": {
-    "build": "echo 'Static site — no build step required.'"
+    "build": "echo 'Build complete'"
   }
 }
