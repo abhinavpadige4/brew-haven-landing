@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#F0E6D3"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A373"/>
+      <stop offset="100%" style="stop-color:#8C5A43"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4B2E2A"/>
+      <stop offset="100%" style="stop-color:#3A201D"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4B2E2A" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="8"/>
+  <g filter="url(#shadow)" transform="translate(200,210)">
+    <ellipse cx="0" cy="80" rx="90" ry="18" fill="#4B2E2A" opacity="0.15"/>
+    <path d="M-70,-60 Q-70,-80 -50,-80 L50,-80 Q70,-80 70,-60 L65,50 Q65,70 45,70 L-45,70 Q-65,70 -65,50 Z" fill="url(#cup)"/>
+    <ellipse cx="0" cy="-60" rx="70" ry="14" fill="#8C5A43"/>
+    <ellipse cx="0" cy="-60" rx="62" ry="11" fill="url(#coffee)"/>
+    <path d="M-20,-62 Q-10,-55 0,-62 Q10,-55 20,-62" fill="none" stroke="#D4A373" stroke-width="2" opacity="0.6"/>
+    <path d="M70,-40 Q95,-40 95,-15 Q95,10 70,10" fill="none" stroke="#8C5A43" stroke-width="8" stroke-linecap="round"/>
+    <path d="M70,-40 Q95,-40 95,-15 Q95,10 70,10" fill="none" stroke="#D4A373" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(200,100)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Playfair Display',serif" font-size="22" fill="#4B2E2A" font-weight="bold">Menu Item</text>
+    <text x="0" y="24" text-anchor="middle" font-family="'Open Sans',sans-serif" font-size="12" fill="#8C5A43">Brew Haven Coffee</text>
+  </g>
+  <g transform="translate(200,340)">
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#D4A373" stroke-width="1" opacity="0.5"/>
+    <text x="0" y="18" text-anchor="middle" font-family="'Open Sans',sans-serif" font-size="10" fill="#8C5A43" opacity="0.7">Premium Coffee Selection</text>
+  </g>
+  <g opacity="0.08">
+    <circle cx="60" cy="60" r="30" fill="#4B2E2A"/>
+    <circle cx="340" cy="340" r="40" fill="#4B2E2A"/>
+    <circle cx="350" cy="80" r="20" fill="#4B2E2A"/>
+  </g>
+</svg>
