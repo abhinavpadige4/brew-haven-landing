@@ -1,7 +1,12 @@
 {
-  "name": "restaurant-website",
+  "name": "app",
   "version": "1.0.0",
+  "description": "",
+  "main": "js/script.js",
   "scripts": {
     "build": "echo 'Build complete'"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
