@@ -1,7 +1,7 @@
 {
-  "name": "restaurant-site",
+  "name": "app",
   "version": "1.0.0",
-  "description": "Restaurant website",
+  "private": true,
   "scripts": {
     "build": "echo 'Build complete'"
   }
