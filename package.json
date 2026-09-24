@@ -1,5 +1,9 @@
 {
-  "name": "app",
+  "name": "brew-haven",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site — no build required'"
+  }
 }
