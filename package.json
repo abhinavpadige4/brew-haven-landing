@@ -1,12 +1,8 @@
 {
-  "name": "app",
+  "name": "brew-haven",
   "version": "1.0.0",
-  "description": "",
-  "main": "js/script.js",
+  "private": true,
   "scripts": {
-    "build": "echo 'Build complete'"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "build": "echo 'Static site — no build step required.'"
+  }
 }
