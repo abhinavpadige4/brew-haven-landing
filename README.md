@@ -4,18 +4,18 @@ A static landing page for Brew Haven coffee shop.
 
 ## Project Overview
 
-Single-page site featuring hero banner, menu highlights, about us, location/contact, and footer sections. Built with vanilla HTML, CSS, and JavaScript — no frameworks or external libraries.
+Single-page site featuring hero banner, menu highlights, about section, location/contact, and footer. Built with vanilla HTML, CSS, and JavaScript — no frameworks or external libraries.
 
 ## Tech Stack
 
-- **HTML5** — semantic structure
-- **CSS3** — mobile-first responsive design with custom design tokens
+- **HTML5** — semantic markup
+- **CSS3** — mobile-first responsive layout with design tokens
 - **Vanilla ES6 JavaScript** — mobile menu toggle and smooth scrolling
 
 ## Design Tokens
 
 | Token | Value |
-|---|---|
+|-------|-------|
 | Primary | #4B2E2A |
 | Secondary | #8C5A43 |
 | Accent | #D4A373 |
@@ -30,42 +30,58 @@ Single-page site featuring hero banner, menu highlights, about us, location/cont
 ## File Structure
 
 ```
-/
-├── index.html
+project/
+├── index.html      # Main page: hero, menu, about, location, footer
 ├── css/
-│   └── style.css
+│   └── style.css   # All styles: tokens, layout, components
 ├── js/
-│   └── script.js
-└── README.md
+│   └── script.js   # Mobile menu toggle, smooth scroll
+└── README.md       # This file
 ```
 
 ## Setup
 
-1. Clone or download the repository.
-2. Open `index.html` directly in any modern browser.
+No build step required. Clone and open directly.
 
-No build step, no dependencies, no server required.
+```bash
+git clone <repo-url>
+cd brew-haven
+```
+
+Open `index.html` in any modern browser.
 
 ## Local Development
 
-- Edit `index.html` for content and structure.
-- Edit `css/style.css` for styling. All design tokens are defined as CSS custom properties at the top of the file.
-- Edit `js/script.js` for interactivity. JavaScript runs on `DOMContentLoaded`.
+1. Edit files directly — changes reflect on page refresh.
+2. Use a local server for live reload:
 
-### Conventions
+```bash
+npx serve .
+```
 
-- CSS is linked via `<link rel="stylesheet" href="css/style.css">` in `<head>`.
-- JavaScript is placed before the closing `</body>` tag.
-- No external libraries or CDNs are used.
-- Mobile-first layout: base styles target small screens, media queries add larger-screen enhancements.
+3. Navigate to `http://localhost:3000`.
+
+## Conventions
+
+- CSS linked via `<link rel="stylesheet" href="css/style.css">` in `<head>`.
+- JavaScript placed before closing `</body>` tag.
+- Vanilla ES6 only — no external libraries.
+- Mobile-first responsive design.
+- All spacing uses 8px base unit.
+
+## Routes
+
+| Path | Description |
+|------|-------------|
+| `/` | Single landing page |
 
 ## Sections
 
-1. **Hero/Banner** — Full-width hero with shop name and tagline.
+1. **Hero** — Full-width banner with tagline and CTA.
 2. **Menu Highlights** — Featured drinks and pastries.
 3. **About Us** — Shop story and values.
-4. **Location/Contact** — Address, hours, and contact details.
-5. **Footer** — Copyright and social links.
+4. **Location & Contact** — Address, hours, map link.
+5. **Footer** — Social links and copyright.
 
 ## Browser Support
 
@@ -73,4 +89,4 @@ All modern browsers (Chrome, Firefox, Safari, Edge).
 
 ## License
 
-MIT
+Proprietary — Brew Haven.
