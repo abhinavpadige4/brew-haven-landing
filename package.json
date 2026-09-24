@@ -1,8 +1,10 @@
 {
-  "name": "app",
+  "name": "brew-haven-landing",
   "version": "1.0.0",
+  "description": "Static landing page for Brew Haven coffee shop",
   "private": true,
   "scripts": {
-    "build": "echo 'Build complete'"
+    "build": "echo 'Static site - no build step required'",
+    "start": "echo 'Open index.html in a browser'"
   }
 }
