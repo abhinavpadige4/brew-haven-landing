@@ -1,15 +1,22 @@
 # Brew Haven — Landing Page
 
-A static landing page for the Brew Haven coffee shop.
+A static landing page for Brew Haven coffee shop.
 
 ## Project Overview
 
-Single-page site featuring a hero banner, menu highlights, about section, location/contact info, and footer. Built with vanilla HTML, CSS, and JavaScript — no frameworks or external libraries.
+Single-page static site featuring:
+- Hero/banner section
+- Menu highlights
+- About us
+- Location/contact
+- Footer
+
+Built with vanilla HTML, CSS, and JavaScript. No frameworks or external libraries.
 
 ## Tech Stack
 
 - **HTML5** — semantic markup
-- **CSS3** — mobile-first responsive design with custom design tokens
+- **CSS3** — mobile-first responsive design with design tokens
 - **Vanilla ES6 JavaScript** — mobile menu toggle and smooth scrolling
 
 ## Design Tokens
@@ -31,49 +38,55 @@ Single-page site featuring a hero banner, menu highlights, about section, locati
 
 ```
 /
-├── index.html      # Main page: hero, menu, about, location, footer
+├── index.html
 ├── css/
-│   └── style.css   # All styles: tokens, layout, components, responsive
+│   └── style.css
 ├── js/
-│   └── script.js   # Mobile menu toggle, smooth scroll
-└── README.md       # This file
+│   └── script.js
+└── README.md
 ```
 
-## Setup & Local Development
+## Setup
 
-1. **Clone or download** the repository.
-2. **Open `index.html`** directly in any modern browser (Chrome, Firefox, Safari, Edge).
-3. No build step, no server, no dependencies required.
+No build step or dependencies required.
 
-### Optional: Local Server
+1. Clone or download the repository.
+2. Open `index.html` in any modern browser.
 
-For a more realistic environment:
+## Local Development
 
-```bash
-# Python 3
-python3 -m http.server 8000
+Option 1 — Open directly:
+```
+open index.html
+```
 
-# Node.js
+Option 2 — Use a local server:
+```
 npx serve .
 ```
 
-Then visit `http://localhost:8000`.
+Then navigate to `http://localhost:3000`.
 
-## Development Guidelines
+## Conventions
 
-- **Mobile-first**: CSS starts at mobile breakpoints and scales up with `min-width` media queries.
-- **No external libraries**: All JavaScript is vanilla ES6, loaded before `</body>`.
-- **CSS linked in `<head>`**: Use `<link rel="stylesheet" href="css/style.css">`.
-- **Design tokens**: All colors, fonts, and spacing are defined as CSS custom properties in `style.css`.
-- **Accessibility**: Semantic HTML5 elements, ARIA labels on interactive controls, sufficient color contrast.
-- **Performance**: No external dependencies; fonts loaded via Google Fonts `<link>` in `<head>`.
+- CSS linked via `<link rel="stylesheet" href="css/style.css">` in `<head>`.
+- JavaScript placed before closing `</body>` tag.
+- Vanilla ES6, `DOMContentLoaded` event, no external libraries.
+- Mobile-first layout with responsive breakpoints.
+- All spacing uses the 8px unit system.
+
+## Routes
+
+| Route | Description |
+|-------|-------------|
+| `/` | Main landing page |
 
 ## Contributing
 
 1. Fork the repository.
 2. Create a feature branch.
-3. Make changes following the guidelines above.
-4. Ensure the page renders correctly at mobile (320px), tablet (768px), and desktop (1024px+) widths.
+3. Make changes following the conventions above.
+4. Ensure `index.html`, `css/style.css`, and `js/script.js` paths remain unchanged.
 5. Submit a pull request.
 
 ## License
